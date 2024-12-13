@@ -124,7 +124,8 @@ def crop_item_tooltip(image: np.ndarray, model: str = "hover-eng_inconsolata_inv
             overlaps_inventory |= not (
                 x+w < left_inv[0] or left_inv[0]+left_inv[2] < x or y+h+60 < left_inv[1] or left_inv[1]+left_inv[3] < y)
         if not overlaps_inventory:
-            continue
+            Logger.warning("Could not determine if item overlaps inventory, just going for it!")
+            # hope for the best instead of `continue`
 
         #print(f"x: {x}, y: {y}, w: {w}, h: {h}")
         footer_y = (y + h) if (y + h) < 700 else 700

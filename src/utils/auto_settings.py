@@ -30,7 +30,7 @@ def backup_settings():
     backup_file = f"{d2_saved_games}/Settings_backup.json"
     current_file = f"{d2_saved_games}/Settings.json"
     if os.path.exists(backup_file):
-        r = input("D2R settings backup already exists, are you sure you want to overwrite it? [y] to confirm")
+        r = input("D2R settings backup already exists, are you sure you want to overwrite it? [y] to confirm: ")
         if not r == 'y':
             return
     shutil.copyfile(current_file, backup_file)
@@ -39,15 +39,17 @@ def backup_settings():
     backup_file = f"{d2_saved_games}/launch_options_backup.txt"
     current_file = f"{os.getenv('APPDATA')}/Battle.net/Battle.net.config"
     if os.path.exists(backup_file):
-        r = input("D2R launch options backup already exists, are you sure you want to overwrite it? [y] to confirm")
+        r = input("D2R launch options backup already exists, are you sure you want to overwrite it? [y] to confirm: ")
         if not r == 'y':
             return
     f = open(current_file)
     curr_settings = json.load(f)
-    launch_options = curr_settings["Games"]["osi"]["AdditionalLaunchArguments"]
-    with open(backup_file, 'w') as f:
-        f.write(launch_options)
-    print("D2R launch options backed up successfully.")
+    print(f'Curr settings map: {json.dumps(curr_settings, indent=4)}')
+    if "AdditionalLaunchArguments" in curr_settings["Games"]["osi"]:
+        launch_options = curr_settings["Games"]["osi"]["AdditionalLaunchArguments"]
+        with open(backup_file, 'w') as f:
+            f.write(launch_options)
+        print("D2R launch options backed up successfully.")
 
 def restore_settings_from_backup():
     d2_saved_games = get_d2r_folder()

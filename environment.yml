@@ -8,20 +8,20 @@ dependencies:
   - leptonica
   - tesseract=5.1.0
   - pkg-config
-  - rapidfuzz
+  - rapidfuzz<3
   - pip:
     - pyinstaller
     - opencv-python==4.5.5.64
     - transitions
-    - mss
-    - numpy
+    - mss==7.0.1
+    - numpy==1.26.4
     - mouse
     - keyboard
     - beautifultable
     - pytweening
     - requests
     - coverage
-    - pytest
+    - pytestO
     - pytest-env
     - pytest-pythonpath
     - pytest-mock
@@ -29,9 +29,10 @@ dependencies:
     - psutil
     - cryptography
     - pillow
-    - discord.py
+    - discord.py==1.7.3
     - parse
     - dependencies/tesserocr-2.5.2-cp310-cp310-win_amd64.whl
     - typing_extensions
+    - idna
     - colorama
     - dataclasses-json
