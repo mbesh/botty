@@ -17,18 +17,18 @@
 //================= Unique Charms ================
 //------------------------------------------------
 
-//[Name] == Grandcharm && [Quality] == Unique     // Gheed's Fortune
-//[Name] == Smallcharm && [Quality] == Unique     // Annihilus Charm
+[Name] == Grandcharm && [Quality] == Unique     // Gheed's Fortune
+[Name] == Smallcharm && [Quality] == Unique     // Annihilus Charm
 
 //------------------------------------------
 //================= Potions ================
 //------------------------------------------
 
-//[Name] == Greaterhealingpotion
-//[Name] == Greatermanapotion
+[Name] == Greaterhealingpotion
+[Name] == Greatermanapotion
 [Name] == Superhealingpotion
 [Name] == Supermanapotion
-//[Name] == Rejuvenationpotion
+[Name] == Rejuvenationpotion
 [Name] == Fullrejuvenationpotion
 
 //----------------------------------------
@@ -112,20 +112,20 @@
 //[Name] == Skull
 //[Name] == Sapphire
 //[Name] == Topaz
-//[Name] == Flawlessamethyst
-//[Name] == Flawlessdiamond
-//[Name] == Flawlessemerald
-//[Name] == Flawlessruby
-//[Name] == Flawlesssapphire
-//[Name] == Flawlessskull
-//[Name] == Flawlesstopaz
-//[Name] == Perfectamethyst
-//[Name] == Perfectdiamond
-//[Name] == Perfectemerald
-//[Name] == Perfectruby
-//[Name] == Perfectsapphire
-//[Name] == Perfectskull
-//[Name] == Perfecttopaz
+[Name] == Flawlessamethyst
+[Name] == Flawlessdiamond
+[Name] == Flawlessemerald
+[Name] == Flawlessruby
+[Name] == Flawlesssapphire
+[Name] == Flawlessskull
+[Name] == Flawlesstopaz
+[Name] == Perfectamethyst
+[Name] == Perfectdiamond
+[Name] == Perfectemerald
+[Name] == Perfectruby
+[Name] == Perfectsapphire
+[Name] == Perfectskull
+[Name] == Perfecttopaz
 
 //=========================================================================//
 //<<<<<<<<<<<<<<<<<<<<<<<<<<++++ Magic Items ++++>>>>>>>>>>>>>>>>>>>>>>>>>>//
@@ -137,34 +137,34 @@
 
 [Name] == Grandcharm && [Quality] == Magic # [Coldresist]+[Fireresist]+[Lightresist]+[Poisonresist] >= 60 // Plain +15 All Res
 [Name] == Grandcharm && [Quality] == Magic # [Itemaddskilltab] >= 1 // All Plain Skillers
-//[Name] == Grandcharm && [Quality] == Magic # ([Coldresist] >= 30 || [Fireresist] >= 30 || [Lightresist] >= 30 || [Poisonresist] >= 30)      // All +30 Single Res Gc
+[Name] == Grandcharm && [Quality] == Magic # ([Coldresist] >= 30 || [Fireresist] >= 30 || [Lightresist] >= 30 || [Poisonresist] >= 30)      // All +30 Single Res Gc
 //[Name] == Grandcharm && [Quality] == Magic && [Flag] != Ethereal # [Maxhp] >= 40        // All +40 Max Hp Gc
 //[Name] == Grandcharm && [Quality] == Magic # [Fhr] >= 12 && [Itemaddskilltab] >= 1 // All Plain Fhr Skillers
 //[Name] == Grandcharm && [Quality] == Magic # [Frw] >= 7 && [Itemaddskilltab] >= 1 // All Plain Frw Skillers
 
 
 // <<<<<<<<< [ Plain Skillers ] >>>>>>>>>
-//[Name] == Grandcharm && [Quality] == Magic # [Fireskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Coldskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Lightningskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Trapsskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Shadowdisciplinesskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Martialartsskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Javelinandspearskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Passiveandmagicskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Bowandcrossbowskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Palicombatskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Defensiveaurasskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Offensiveaurasskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Elementalskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Shapeshiftingskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Druidsummoningskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Warcriesskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Masteriesskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Barbcombatskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Poisonandboneskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Necromancersummoningskilltab] >= 1
-//[Name] == Grandcharm && [Quality] == Magic # [Cursesskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Fireskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Coldskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Lightningskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Trapsskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Shadowdisciplinesskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Martialartsskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Javelinandspearskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Passiveandmagicskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Bowandcrossbowskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Palicombatskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Defensiveaurasskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Offensiveaurasskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Elementalskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Shapeshiftingskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Druidsummoningskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Warcriesskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Masteriesskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Barbcombatskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Poisonandboneskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Necromancersummoningskilltab] >= 1
+[Name] == Grandcharm && [Quality] == Magic # [Cursesskilltab] >= 1
 
 // <<<<<<<<< [ +Fhr Skillers ] >>>>>>>>>
 //[Name] == Grandcharm && [Quality] == Magic # [Fhr] >= 12 && [Fireskilltab] >= 1
@@ -326,7 +326,7 @@
 
 // <<<<<<<<< [ Magic Amulets ] >>>>>>>>>
 //[Name] == Amulet && [Quality] == Magic # [Itemchargedskill] == 54		// Tele Amulet
-//[Type] == Amulet && [Quality] == Magic # [Itemaddskilltab] >= 3 && ([Fcr] >= 10 || [Itemmagicbonus] >= 35)        // +3 Skill Fcr/Mf Amulet
+[Type] == Amulet && [Quality] == Magic # [Itemaddskilltab] >= 3 && ([Fcr] >= 10 || [Itemmagicbonus] >= 35)        // +3 Skill Fcr/Mf Amulet
 
 //-------------------------------------------
 //================= Circlets ================
@@ -1220,7 +1220,7 @@
 
 [Name] == Swirlingcrystal && [Quality] == Set     // Tal Rasha's Lidless Eye
 //[Name] == Swirlingcrystal && [Quality] == Set # [Plusskillcoldmastery] == 2 && [Plusskillfiremastery] == 2 && [Plusskilllightningmastery] == 2     // Tal Rasha's Lidless Eye Perfect
-//[Name] == Deathmask && [Quality] == Set     // Tal Rasha's Horadric Crest
+[Name] == Deathmask && [Quality] == Set     // Tal Rasha's Horadric Crest
 [Name] == Lacqueredplate && [Quality] == Set      // Tal Rasha's Guardianship
 //[Name] == Lacqueredplate && [Quality] == Set # [Defense] >= 941     // Tal Rasha's Guardianship Perfect
 [Type] == Amulet && [Quality] == Set # [Sorceressskills] == 2   	// Tal Rasha's Adjucation
@@ -1531,13 +1531,13 @@
 //================= Unique Polearms ================
 //--------------------------------------------------
 
-//[Name] == Ogreaxe && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddamage] >= 270       // Bonehew
+[Name] == Ogreaxe && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddamage] >= 270       // Bonehew
 //[Name] == Ogreaxe && [Quality] == Unique && [Flag] == Ethereal # [Enhanceddamage] >= 270       // Eth Bonehew
 [Name] == Ogreaxe && [Quality] == Unique && [Flag] == Ethereal # [Enhanceddamage] == 320      // Eth Bonehew Perfect
-//[Name] == Thresher && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddamage] >= 190     // The Reaper's Toll
+[Name] == Thresher && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddamage] >= 190     // The Reaper's Toll
 [Name] == Thresher && [Quality] == Unique && [Flag] == Ethereal # [Enhanceddamage] >= 190     // Eth The Reaper's Toll
 //[Name] == Thresher && [Quality] == Unique && [Flag] == Ethereal # [Enhanceddamage] == 240 && [Lifeleech] == 15     // Eth The Reaper's Toll Perfect
-//[Name] == Crypticaxe && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddamage] >= 200 && [Sockets] >= 1     // Tomb Reaver
+[Name] == Crypticaxe && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddamage] >= 200 && [Sockets] >= 1     // Tomb Reaver
 [Name] == Crypticaxe && [Quality] == Unique && [Flag] == Ethereal # [Enhanceddamage] >= 200 && [Sockets] >= 1     // Eth Tomb Reaver
 //[Name] == Crypticaxe && [Quality] == Unique && [Flag] == Ethereal # [Enhanceddamage] == 280 && [Sockets] == 3 && [Hpregen] == 14 && [Allres] == 50     // Eth Tomb Reaver Perfect
 

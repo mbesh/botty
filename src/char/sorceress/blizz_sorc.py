@@ -55,11 +55,27 @@ class BlizzSorc(Sorceress):
             wait(0.09, 0.12)
             mouse.release(button="right")
 
+    def _meteor(self, cast_pos_abs: tuple[float, float], spray: float = 10):
+        if not self._skill_hotkeys["meteor"]:
+            raise ValueError("You did not set a hotkey for meteor!")
+        keyboard.send(self._skill_hotkeys["meteor"])
+        x = cast_pos_abs[0] + (random.random() * 2 * spray - spray)
+        y = cast_pos_abs[1] + (random.random() * 2 * spray - spray)
+        cast_pos_monitor = convert_abs_to_monitor((x, y))
+        mouse.move(*cast_pos_monitor)
+        click_tries = random.randint(2, 4)
+        for _ in range(click_tries):
+            mouse.press(button="right")
+            wait(0.09, 0.12)
+            mouse.release(button="right")
+
+
     def kill_pindle(self) -> bool:
         pindle_pos_abs = convert_screen_to_abs(Config().path["pindle_end"][0])
         cast_pos_abs = [pindle_pos_abs[0] * 0.9, pindle_pos_abs[1] * 0.9]
         for _ in range(int(Config().char["atk_len_pindle"])):
             self._blizzard(cast_pos_abs, spray=11)
+            self._meteor(cast_pos_abs, spray=50)
             self._ice_blast(cast_pos_abs, spray=11)
         # Move to items
         wait(self._cast_duration, self._cast_duration + 0.2)
@@ -73,6 +89,7 @@ class BlizzSorc(Sorceress):
         self.move(pos_m, force_move=True)
         self._blizzard((-50, -50), spray=10)
         self._cast_static()
+        self._ice_blast((50, -200))
         wait(0.75)
         #move down
         pos_m = convert_abs_to_monitor((0, 85))
@@ -80,6 +97,7 @@ class BlizzSorc(Sorceress):
         self.move(pos_m, force_move=True)
         self._blizzard((-170, -350), spray=10)
         self._cast_static()
+        self._ice_blast((70, -350))
         #move down
         wait(0.75)
         pos_m = convert_abs_to_monitor((0, 75))
@@ -87,6 +105,7 @@ class BlizzSorc(Sorceress):
         self.move(pos_m, force_move=True)
         self._blizzard((100, -300), spray=10)
         self._cast_static()
+        self._ice_blast((100, -300))
         wait(0.75)
         pos_m = convert_abs_to_monitor((0, 55))
         self.pre_move()
@@ -94,12 +113,12 @@ class BlizzSorc(Sorceress):
         self._blizzard((-50, -130), spray=10)
         self._cast_static()
         wait(3.0)
-        pos_m = convert_abs_to_monitor((0, -100))
-        self.pre_move()
-        self.move(pos_m, force_move=True)
-        self._blizzard((-50, -130), spray=10)
-        self._cast_static()
-        wait(1.75)
+        # pos_m = convert_abs_to_monitor((0, -100))
+        # self.pre_move()
+        # self.move(pos_m, force_move=True)
+        # self._blizzard((-50, -130), spray=10)
+        # self._cast_static()
+        # wait(1.75)
         self._pather.traverse_nodes_fixed("eldritch_end", self)
         return True
 
@@ -114,14 +133,14 @@ class BlizzSorc(Sorceress):
         self._ice_blast((60, 70), spray=60)
         self._blizzard((400, 200), spray=10)
         self._cast_static()
-        self._ice_blast((-300, 100), spray=60)
+        self._ice_blast((300, -100), spray=60)
         self._blizzard((185, 200), spray=10)
         pos_m = convert_abs_to_monitor((-10, 10))
         self.pre_move()
         self.move(pos_m, force_move=True)
         self._cast_static()
         self._blizzard((-300, -270), spray=10)
-        self._ice_blast((-20, 30), spray=60)
+        self._ice_blast((50, -70), spray=60)
         wait(1.0)
         #teledance 2
         pos_m = convert_abs_to_monitor((150, -240))
